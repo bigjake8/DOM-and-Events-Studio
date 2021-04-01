@@ -25,7 +25,7 @@ function init () {
   
 
     landing.addEventListener("click", function() {
-      let landAlert = window.alert("The shuttle is landing. Landing gear engaged.");
+      window.alert("The shuttle is landing. Landing gear engaged.");
       flightStatus.innerHTML = "The shuttle has landed";
       shuttleBackground.style.backgroundColor = "green";
       let currentSpaceShuttleHeight = 0;
@@ -34,7 +34,7 @@ function init () {
     });
 
       missionAbort.addEventListener("click", function() {
-      let abortConfirm = window.confirm("Confirm that you want to abort the mission.");
+      let abortConfirm= window.confirm("Confirm that you want to abort the mission.");
 
       if (abortConfirm) {
       flightStatus.innerHTML = "Mission Aborted";
